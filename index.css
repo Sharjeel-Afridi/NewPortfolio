@@ -5,6 +5,51 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #150050;
 }
+nav{
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .img-container{
+    border-radius: 50%;
+}
+nav .hover-img{
+    display: none;
+    margin-left: 100px;
+    height: 100px;
+}
+nav .og-img{
+    margin-left: 100px;
+    height: 100px;
+}
+nav .img-container:hover .og-img{
+    display: none;
+}
+nav .img-container:hover .hover-img{
+    display: block;
+}
+
+nav button{
+    padding: 16px 16px;
+    margin-right: 100px;
+    background: #fff;
+    border: 1px solid #00abf0;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+nav button:hover{
+    background: #00abf0 ;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: none;
+}
+
 section{
     display: flex;
     height: 100%;
@@ -14,13 +59,13 @@ section{
 .left{
     height: 100%;
     width:50%;
-    margin: 300px 20px 20px 100px;
+    margin: 100px 20px 20px 100px;
 }
 .left h1{
     font-size: 30px;
     font-weight: 500;
 }
-.left span{
+.left .span{
     font-size: 50px;
     font-weight: bold;
 }
@@ -53,13 +98,17 @@ section{
     border-color: #00abf0;
     box-shadow: none;
 }
+.left a{
+    text-decoration: none;
+    font-weight: bold;
+}
 .right{
     height: 100%;
     width: 50%;
     
 }
 .right img {
-
-    height: 100%;
+    margin-top: 0px;
+    height: 630px;
     width: 100%;
 }
