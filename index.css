@@ -79,11 +79,11 @@ section{
     padding-right: 170px ;
 }
 .left button{
-    padding: 18px 35px;
+    padding: 18px 20px;
     margin-top: 40px;
-    background: #00abf0;
+    background: #150050;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
     font-size: 17px;
     color: #fff;
     text-decoration: none;
@@ -111,4 +111,45 @@ section{
     margin-top: 0px;
     height: 630px;
     width: 100%;
+}
+
+.recent-works{
+    background-color: #150050;
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 500px;
+    width: 100%;
+}
+.main h1{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    font-size: 45px;
+    margin-top:100px;
+    
+}
+.main h2{
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px ;
+    width: 750px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.projects .works{
+    margin-top: 50px;
+    flex: 0 0 30%;
+    background-color: #00abf0;
+    height: 300px;
+    width: 300px;
 }
