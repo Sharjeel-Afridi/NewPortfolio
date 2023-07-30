@@ -102,6 +102,7 @@ section{
     text-decoration: none;
     font-weight: bold;
 }
+
 .right{
     height: 100%;
     width: 50%;
@@ -170,18 +171,40 @@ section{
     background-color: #00abf0;
     height: 300px;
     width: 300px;
-    background-size: cover;
+    
     background-position: center;
     border-radius: 10px;
 }
 .project-1{
     background-image: url(./project-1.PNG);
+    background-size: cover;
 }
+.overlay {
+    transform: scaleX(0);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+  }
+  
+.project-1:hover .overlay,
+.project-2:hover .overlay,
+.project-3:hover .overlay {
+transform: scaleX(1);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: linear-gradient(white, rgba(5, 208, 254, 0.7));
+}
+  
+
 .project-2{
     background-image: url(./blackjack.PNG);
+    background-size: cover;
 }
 .project-3{
     background-image: url(./post.png);
+    background-size: 100% 100%;
 }
 .skills{
     height: 400px;
@@ -249,17 +272,25 @@ footer{
 }
  .socials {
     display: flex;
-    font-size: 35px;
+    
     justify-content: center;
     gap: 30px;
+    position: relative;
+ }
+.socials a{
+    text-decoration: none;
     color: #11231f;
     position: relative;
- }
+    top: 80px;
+}
 
  .socials i{
-    position: relative;
-    top: 150px;
+    font-size: 35px;
  }
+ .socials i:hover{
+    font-size: 45px;
+    box-shadow: 0 0 5px #fff;
+}
 .foot{
     display: flex;
     justify-content: center;
