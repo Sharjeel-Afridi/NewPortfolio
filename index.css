@@ -165,19 +165,32 @@ section{
     gap: 20px;
     
 }
-.projects .works{
+.projects a{
+    display: flex;
+    text-decoration: none;
+}
+.works{
     margin-top: 50px;
     flex: 0 0 30%;
     background-color: #00abf0;
     height: 300px;
     width: 300px;
-    
     background-position: center;
     border-radius: 10px;
 }
+
 .project-1{
     background-image: url(./project-1.PNG);
     background-size: cover;
+}
+
+.project-2{
+    background-image: url(./blackjack.PNG);
+    background-size: cover;
+}
+.project-3{
+    background-image: url(./post.png);
+    background-size: 100% 100%;
 }
 .overlay {
     transform: scaleX(0);
@@ -195,16 +208,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: linear-gradient(white, rgba(5, 208, 254, 0.7));
-}
-  
-
-.project-2{
-    background-image: url(./blackjack.PNG);
-    background-size: cover;
-}
-.project-3{
-    background-image: url(./post.png);
-    background-size: 100% 100%;
 }
 .skills{
     height: 400px;
