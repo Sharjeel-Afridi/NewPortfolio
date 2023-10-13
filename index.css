@@ -316,7 +316,6 @@ footer{
         font-size: 5vw;
         color: white;
         -webkit-text-stroke: 2px #150050;
-        text-stroke: 2px #150050; 
     }
     .left p{
         font-size: 4vw;
@@ -363,6 +362,9 @@ footer{
     .skills{
         display: flex;
         font-size: 4vw;
+    }
+    .skills h1{
+        font-size: 5vh;
     }
     .skills-container img {
         height: 30%;
