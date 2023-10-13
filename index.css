@@ -84,26 +84,12 @@ section{
 }
 .projects-container {
     display: flex;
-    flex-direction: column; /* Stack the button below the project divs */
-    align-items: center; /* Center-align the button horizontally */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
 }
 
-.projects-container button{
-    padding: 18px 60px;
-    background: #fff;
-    border: 2px solid #00abf0;
-    border-radius: 5px;
-    font-size: 17px;
-    color: #00abf0;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-.projects-container button:hover{
-    background: #00abf0;
-    color: #fff;
-}
 .main{
     height: 500px;
     width: 100%;
@@ -187,11 +173,12 @@ align-items: center;
 background: linear-gradient(white, rgba(5, 208, 254, 0.7));
 }
 .skills{
+    display: flex;
     height: 600px;
     text-align: center;
-    display: grid;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 100px;
+    flex-direction: column;
     
 }
 
@@ -201,6 +188,8 @@ background: linear-gradient(white, rgba(5, 208, 254, 0.7));
     align-items: center;
     height: 300px;
     width: 80%;
+    white-space: nowrap; /* To Add horrizonatal scroll*/
+    overflow-x: auto;
     margin: 0 auto 50px auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
@@ -315,6 +304,7 @@ footer{
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-left: 20px;
     }
     .left h1{
         font-size: 3vw;
@@ -340,11 +330,40 @@ footer{
         margin-bottom: 200px;
         height: 7vh;
         padding: 0;
+        font-size: 35px;
+        font-family:'Montserrat', sans-serif;
     }
-    section, .recent-works {
-        /* height: 50%; */
+    .recent-works {
+        height: 100%;
     }
-
+    .main h1{
+        font-size: 5vh;
+    }
+    .main h2{
+        display: flex;
+        font-size: 4vw;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .projects-container{
+        height: 60vh;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        box-shadow: 0 5px 20px 0px #dbedf5;
+    }
+    
+    .projects-container a{
+        flex: 0 0 calc(90% - 10px);
+        margin: 0 5px;
+        height: 500px;
+    }
+    .projects{
+        gap: 60px;
+    }
+    .skills{
+        display: flex;
+        font-size: 4vw;
+    }
     .skills-container img {
         height: 30%;
     }
