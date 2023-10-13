@@ -176,23 +176,23 @@ section{
 }
 
 .project-1{
-    background-image: url(./project-1.PNG);
+    background-image: url(./images/project-1.PNG);
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .project-2{
-    background-image: url(./blackjack.PNG);
+    background-image: url(./images/blackjack.PNG);
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .project-3{
-    background-image: url(./post.png);
+    background-image: url(./images/post.png);
     background-size: 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .project-4{
-    background-image: url(./leads.png);
+    background-image: url(./images/leads.png);
     background-size: 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
